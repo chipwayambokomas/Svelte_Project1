@@ -1,11 +1,13 @@
 <script lang="ts">
     export let title = "Normal title";
+    let checked = false;
 </script>
 
-<div>
-    <h1>{title}</h1>
-  <p>This is a card</p>  
-  <slot/>
+<div class:completed={checked}>
+    <span> <slot/></span>
+ 
+
+  <input type="checkbox" bind:checked/>
 
 </div>
 
@@ -16,5 +18,10 @@
         border-radius: 2px;
         margin: 1rem;
         min-width: 10rem;
+    }
+
+    .completed{
+        text-decoration: line-through;
+        background-color: gray;
     }
 </style>
