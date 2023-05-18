@@ -6,5 +6,16 @@
 
 <h1 title={title}>Hello {name}</h1>
 
-<Card/>
+<div class="div1">
+  <Card/>
 <Card title="Different"/>
+</div>
+
+
+<style>
+
+  .div1{
+    display: flex;
+  }
+
+</style>
