@@ -7,3 +7,4 @@
 <h1 title={title}>Hello {name}</h1>
 
 <Card/>
+<Card title="Different"/>
