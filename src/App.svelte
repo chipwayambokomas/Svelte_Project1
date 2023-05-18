@@ -4,6 +4,9 @@
   let title = "My name"
   let titleNew = ""
   let checked = false;
+  function onClick(){
+    checked = !checked;
+  }
 </script>
 
 <h1 title={title}>{titleNew}</h1>
@@ -20,6 +23,7 @@
 {/if}
 <input type="text" bind:value={titleNew}/>
 <input type="checkbox" bind:checked/>
+<button on:click={onClick}>Click me</button>
 
 <style>
 
