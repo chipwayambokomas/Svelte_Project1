@@ -2,9 +2,10 @@
   import Card from "./lib/Card.svelte"
   let name = "Saul"
   let title = "My name"
+  let titleNew = ""
 </script>
 
-<h1 title={title}>Hello {name}</h1>
+<h1 title={title}>{titleNew}</h1>
 
 <div class="div1">
   <Card/>
@@ -12,7 +13,7 @@
   <h1>Hello World</h1>
 </Card>
 </div>
-
+<input type="text" bind:value={titleNew}/>
 
 <style>
 
