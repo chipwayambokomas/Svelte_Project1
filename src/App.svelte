@@ -5,11 +5,19 @@
   let titleNew = ""
   let checked = false;
   function onClick(){
-    checked = !checked;
+    count++;
+
+    list.push("Word")
+    list = list;
   }
+  let count = 0;
+  let list = [
+    "Hello",
+    "You"
+  ]
 </script>
 
-<h1 title={title}>{titleNew}</h1>
+<h1 title={title}>Count: {count}</h1>
 {#if checked}
 <div class="div1">
   <Card/>
@@ -25,6 +33,9 @@
 <input type="checkbox" bind:checked/>
 <button on:click={onClick}>Click me</button>
 
+{#each list as word}
+<h1>{word}</h1>
+{/each}
 <style>
 
   .div1{
