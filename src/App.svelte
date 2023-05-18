@@ -8,7 +8,9 @@
 
 <div class="div1">
   <Card/>
-<Card title="Different"/>
+<Card title="Different">
+  <h1>Hello World</h1>
+</Card>
 </div>
 
 

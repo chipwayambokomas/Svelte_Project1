@@ -5,6 +5,7 @@
 <div>
     <h1>{title}</h1>
   <p>This is a card</p>  
+  <slot/>
 
 </div>
 
